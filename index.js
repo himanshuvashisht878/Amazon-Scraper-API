@@ -35,7 +35,7 @@ app.get(PRODUCT_DETAILS, async (req, res) => {
     const response = await request(
       `${returnScraperApiUrl(
         api_key
-      )}&url=https://www.amazon.com/dp/${productId}`
+      )}&url=https://www.amazon.in/dp/${productId}`
     );
 
     res.json(JSON.parse(response));
@@ -54,7 +54,7 @@ app.get(PRODUCT_REVIEWS, async (req, res) => {
     const response = await request(
       `${returnScraperApiUrl(
         api_key
-      )}&url=https://www.amazon.com/product-reviews/${productId}`
+      )}&url=https://www.amazon.in/product-reviews/${productId}`
     );
 
     res.json(JSON.parse(response));
@@ -73,7 +73,7 @@ app.get(PRODUCT_OFFERS, async (req, res) => {
     const response = await request(
       `${returnScraperApiUrl(
         api_key
-      )}&url=https://www.amazon.com/gp/offer-listing/${productId}`
+      )}&url=https://www.amazon.in/gp/offer-listing/${productId}`
     );
 
     res.json(JSON.parse(response));
@@ -92,7 +92,7 @@ app.get(PRODUCT_SEARCH, async (req, res) => {
     const response = await request(
       `${returnScraperApiUrl(
         api_key
-      )}&url=https://www.amazon.com/s?k=${searchQuery}`
+      )}&url=https://www.amazon.in/s?k=${searchQuery}`
     );
 
     res.json(JSON.parse(response));

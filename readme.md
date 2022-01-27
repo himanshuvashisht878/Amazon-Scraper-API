@@ -21,3 +21,6 @@
 - use request to fetch details of the product by passing the productId
 - return the response
 - parse the response
+
+## Notes 
+- Working for Amazon.in
