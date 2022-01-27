@@ -12,7 +12,7 @@ const {
 // Initialize app
 const app = express();
 const PORT = process.env.PORT || 5000;
-const apiKey = "be63634f6d1593d7207c56a8ffab8df4"
+const apiKey = "be63634f6d1593d7207c56a8ffab8df4";
 app.use(express.json()); // Allow app to parse json
 
 const returnScraperApiUrl = (apiKey) =>
